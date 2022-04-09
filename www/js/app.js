@@ -84,11 +84,11 @@
         alert('Please enter  word!!');
       }else{
       var newData = new Promise((resolve,reject)=>{
-       const path = 'https://demoapi.harryramma.co.uk/getWordFrom/'
+       const path = 'https://demoapi.pathtoyourserver.xx/getWordFrom/'
             window.fetch(path, {
               method: 'POST',
               headers: {
-                'Accept': 'application/json','Content-Type': 'application/json','monkey':'spL1shSplAshSploS4'
+                'Accept': 'application/json','Content-Type': 'application/json','apikey':'yourSecre4tHe4derKey'
               },
               body:JSON.stringify({text:rSC(data.word),fetchType:0})
             })
