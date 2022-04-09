@@ -206,10 +206,6 @@ height:100%;
 .page__content{
   background-color: black !important;
 }
-.card{
-  background-color: antiquewhite;
-}
-
 .recentRow{
   display:inline-block;
 }
