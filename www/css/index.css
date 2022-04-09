@@ -178,7 +178,7 @@ height:100%;
   font-weight:600;
 }
 .definition{
-  height: 300px;
+  max-height: 300px;
   overflow: auto;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,1) inset;
   padding: 10px;
