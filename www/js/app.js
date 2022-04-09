@@ -84,7 +84,7 @@
         alert('Please enter  word!!');
       }else{
       var newData = new Promise((resolve,reject)=>{
-       const path = 'https://apiapi.monkeywithoutthee.com/getWordFrom/58/'
+       const path = 'https://demoapi.harryramma.co.uk/getWordFrom/'
             window.fetch(path, {
               method: 'POST',
               headers: {
@@ -130,17 +130,19 @@
     function rSC(data){
     	//the objective it to replace any special characters which might conflict with JS within a string
     	//console.log('rsc receiving::',data);
-    		data=data.replaceAll(/\’/g,"")
-    			.replaceAll(/\‘/g,"")
-    			.replaceAll(/\”/g,"")
-    			.replaceAll(/\“/g,"")
-    			.replaceAll(/\"/g,"")
-    			.replaceAll(/\'/g,"")
-    			.replaceAll(/\•/g,"")
-    			.replaceAll(/\¥/g,"")
-    			.replaceAll(/\€/g,"")
-    			.replaceAll(/\£/g,"")
-    			.replaceAll(/\`/g,"");
+
+      //str.replace(/foo/g, 'moo');
+    		data=data.replace(/\’/g,"")
+    			.replace(/\‘/g,"")
+    			.replace(/\”/g,"")
+    			.replace(/\“/g,"")
+    			.replace(/\"/g,"")
+    			.replace(/\'/g,"")
+    			.replace(/\•/g,"")
+    			.replace(/\¥/g,"")
+    			.replace(/\€/g,"")
+    			.replace(/\£/g,"")
+    			.replace(/\`/g,"");
 
     	 // console.log('rsc returning::',data);
     		return data;
@@ -209,6 +211,8 @@
       if (event.target.className.includes('viewWord')){
         //console.log('in gen click listener::',event.target);
         if(event.target.innerText){
+          var o = document.getElementById('tWord');
+          if (o){o.value = event.target.innerText;};
           fetchWord({word:event.target.innerText});
         };
         return;
