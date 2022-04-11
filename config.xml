@@ -5,7 +5,7 @@
         A sample Javascript, css, html Cordova application that works with demoAPI
     </description>
     <author email="stevemonk3@hotmail.com" href="https://harryramma.co.uk">
-        Apache Cordova Team
+        Stephen Monk
     </author>
     <content src="index.html" />
     <access origin="*" />
