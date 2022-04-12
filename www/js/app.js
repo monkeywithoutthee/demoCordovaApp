@@ -81,7 +81,7 @@
     //console.log(data,'<<fetchWord::',this);
     //return false;
       if (data.word.length===0){
-        alert('Please enter  word!!');
+          ons.notification.alert({message:'Please enter something!!'});
       }else{
       var newData = new Promise((resolve,reject)=>{
        const path = 'https://demoapi.pathtoyourserver.xx/getWordFrom/'
