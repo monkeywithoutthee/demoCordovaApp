@@ -4,7 +4,7 @@
     var oPage = {
       recentWords:[],
       fetchedWord:[],
-    };;
+    };
     function innit(){
 
       setTimeout(function () {
